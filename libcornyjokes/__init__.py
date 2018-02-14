@@ -2,6 +2,9 @@
 
 from os import path
 import random
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
 
 module_data = path.join(path.dirname(__file__), "data")
 ascii_path = path.join(module_data, "ascii")
