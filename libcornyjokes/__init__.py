@@ -3,6 +3,8 @@
 from os import path
 import random
 import textwrap
+import pygame
+import time 
 
 module_data = path.join(path.dirname(__file__), "data")
 ascii_path = path.join(module_data, "ascii")
@@ -32,3 +34,9 @@ def main():
 
     with open(ascii_path) as ascii_file:
         print(ascii_file.read())
+        
+    with open pygame.init():        
+        pygame.mixer.music.load("wah.ogg")
+        pygame.mixer.music.play()
+        time.sleep(7) 
+        # attempting to get wah.ogg file to play with jokes
