@@ -35,8 +35,11 @@ def main():
     with open(ascii_path) as ascii_file:
         print(ascii_file.read())
         
-    with open pygame.init():        
-        pygame.mixer.music.load("wah.ogg")
-        pygame.mixer.music.play()
-        time.sleep(7) 
-        # attempting to get wah.ogg file to play with jokes
+def wah():
+    pygame.init()
+    pygame.mixer.music.load("wah.ogg")
+    pygame.mixer.music.play()
+    time.sleep(9)
+
+wah()
+    
