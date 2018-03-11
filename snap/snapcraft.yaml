@@ -1,0 +1,25 @@
+name: cornyjokes # check to see if it's available
+version: '2.1.0+git' # this is freakin' awesome
+summary: Corny jokes for the terminal # 79 char long summary
+description: |
+  Corny, clean jokes for the terminal.
+grade: stable # must be 'stable' to release into candidate/stable channels
+confinement: strict # use 'strict' once you have the right plugs
+
+apps:
+  cornyjokes:
+    command: cornyjokes
+    plugs:
+      - home
+     
+parts: 
+  my-part:
+    source: https://github.com/kz6fittycent/corny-jokes
+    source-type: git
+    plugin: python3
+    
+    build-packages:
+      - python3
+      
+    stage-packages:
+      - python3
