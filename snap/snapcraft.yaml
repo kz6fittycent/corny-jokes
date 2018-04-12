@@ -1,5 +1,5 @@
 name: cornyjokes # check to see if it's available
-version: '2.1.2+git' # this is freakin' awesome
+version: '2.1.3+git' # this is freakin' awesome
 summary: Corny jokes for the terminal # 79 char long summary
 description: |
   Corny, clean jokes for the terminal.
