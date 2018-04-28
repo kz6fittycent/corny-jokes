@@ -1,5 +1,5 @@
 name: cornyjokes # check to see if it's available
-version: '2.1.3+git' # this is freakin' awesome
+version: '2.1.4+git' # this is freakin' awesome
 summary: Corny jokes for the terminal # 79 char long summary
 description: |
   Corny, clean jokes for the terminal.
@@ -16,7 +16,8 @@ parts:
   my-part:
     source: https://github.com/kz6fittycent/corny-jokes
     source-type: git
-    plugin: python3
+    plugin: python
+    python-version: python3
     
     build-packages:
       - python3
