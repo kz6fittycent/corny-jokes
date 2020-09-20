@@ -1,10 +1,16 @@
 name: cornyjokes # check to see if it's available
-version: git
+#version: git
+adopt-info: cornyjokes
 summary: Corny jokes for the terminal # 79 char long summary
 description: |
   Corny, clean jokes for the terminal.
 grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict # use 'strict' once you have the right plugs
+license: MIT
+
+base: core18
+grade: stable
+confinement: strict
 
 apps:
   cornyjokes:
@@ -15,12 +21,16 @@ apps:
       - home
      
 parts: 
-  my-part:
+  cornyjokes:
     source: https://github.com/kz6fittycent/corny-jokes
     source-type: git
     plugin: python
     python-version: python3
     
+    override-pull: |
+      snapcraftctl pull
+      snapcraftctl set-version "$(git describe --tags | sed 's/^v//')"
+      
     build-packages:
       - python3
       
