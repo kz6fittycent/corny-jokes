@@ -1,6 +1,5 @@
 
-[![Snap Status](https://build.snapcraft.io/badge/kz6fittycent/corny-jokes.svg)](https://build.snapcraft.io/user/kz6fittycent/corny-jokes)
-
+[![cornyjokes](https://snapcraft.io//cornyjokes/badge.svg)](https://snapcraft.io/cornyjokes)
 
 # corny-jokes
 Corny jokes for the terminal
