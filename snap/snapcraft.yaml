@@ -1,11 +1,10 @@
-name: cornyjokes # check to see if it's available
-#version: git
+name: cornyjokes 
 adopt-info: cornyjokes
-summary: Corny jokes for the terminal # 79 char long summary
+summary: Corny jokes for the terminal 
 description: |
   Corny, clean jokes for the terminal.
-grade: stable # must be 'stable' to release into candidate/stable channels
-confinement: strict # use 'strict' once you have the right plugs
+grade: stable 
+confinement: strict 
 license: MIT
 
 base: core18
