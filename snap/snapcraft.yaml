@@ -16,8 +16,6 @@ apps:
     command: cornyjokes
     environment:
       LC_ALL: C.UTF-8
-    plugs:
-      - home
      
 parts: 
   cornyjokes:
