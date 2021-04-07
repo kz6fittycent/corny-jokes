@@ -7,13 +7,13 @@ grade: stable
 confinement: strict 
 license: MIT
 
-base: core18
+base: core20
 grade: stable
 confinement: strict
 
 apps:
   cornyjokes:
-    command: cornyjokes
+    command: bin/cornyjokes
     environment:
       LC_ALL: C.UTF-8
      
@@ -22,14 +22,7 @@ parts:
     source: https://github.com/kz6fittycent/corny-jokes
     source-type: git
     plugin: python
-    python-version: python3
     
     override-pull: |
       snapcraftctl pull
       snapcraftctl set-version "$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"
-      
-    build-packages:
-      - python3
-      
-    stage-packages:
-      - python3
