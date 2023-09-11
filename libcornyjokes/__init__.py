@@ -32,5 +32,8 @@ def main():
 
     with open(ascii_path) as ascii_file:
         print(ascii_file.read())
-        
+
+def plainPrint():
+    with open(quotes_path, encoding="utf8") as quotes_file:
+        print(random.choice(quotes_file.readlines()).rstrip())        
   

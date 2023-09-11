@@ -1,5 +1,27 @@
 #!/usr/bin/env python3
 
 import libcornyjokes
+import sys
+import getopt
 
-libcornyjokes.main()
+# whether to print with or without ascii, by default it will print with the ascii
+plainFlag = False
+
+
+argv = sys.argv[1:]
+try:
+    opts, args = getopt.getopt(argv, "ph")
+except:
+    print("Error getting opts")
+
+for opt, arg in opts:
+    if opt in ['-h']:
+        print("cornyjokes prints an insult along with an ascii image of a smilie.\nTo disable ascii mode, use the -p flag.")
+        exit(0)
+    elif opt in ['-p']:
+        plainFlag = True
+
+if plainFlag:
+    libcornyjokes.plainPrint()
+else:
+    libcornyjokes.main()
