@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name="cornyjokes",
-    version="3.1",
+    version="3.2",
     description="A collection of corny, clean jokes for the terminal",
     long_description=open("README.md").read(),
     license="MIT",
