@@ -3,20 +3,11 @@ adopt-info: cornyjokes
 summary: Corny jokes for the terminal 
 description: |
   Corny, clean jokes for the terminal.
+
 grade: stable 
 confinement: strict 
 license: MIT
-
-base: core20
-grade: stable
-confinement: strict
-
-architectures:
-  - build-on: amd64
-  - build-on: arm64
-  - build-on: armhf
-  - build-on: ppc64el
-  - build-on: s390x
+base: core22
 
 apps:
   cornyjokes:
