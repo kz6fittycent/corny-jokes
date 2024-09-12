@@ -1,5 +1,5 @@
 
-[![cornyjokes](https://snapcraft.io//cornyjokes/badge.svg)](https://snapcraft.io/cornyjokes)
+[![cornyjokes](https://snapcraft.io//cornyjokes/badge.svg)](https://snapcraft.io/cornyjokes) [![🧪 Snap Builds](https://github.com/kz6fittycent/corny-jokes/workflows/%F0%9F%A7%AA%20Snap%20Builds/badge.svg)](https://github.com/kz6fittycent/corny-jokes/actions?query=workflow:"🧪+Snap+Builds")
 
 # corny-jokes
 Corny jokes for the terminal
